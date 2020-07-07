@@ -6,7 +6,7 @@
 #include <cstdlib>
 using namespace std;
 
-#define VERSION "1.0.1"
+#define VERSION "1.0.2"
 
 int num_started_with(wstring& str)
 {
@@ -414,7 +414,7 @@ int main(int argc, char * argv[])
                 }
             }
         }
-
+        if (list_state) lists.push_back(list_items);
         in.close();
 
         Producer * producer;
