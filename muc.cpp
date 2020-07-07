@@ -6,7 +6,7 @@
 #include <cstdlib>
 using namespace std;
 
-#define VERSION "1.0.0"
+#define VERSION "1.0.1"
 
 int num_started_with(wstring& str)
 {
@@ -290,7 +290,7 @@ int main(int argc, char * argv[])
     bool html_flag = true;
     bool tex_flag = true;
     bool pdf_flag = false;
-    /*
+    
     if (argc == 1)
     {
         cout << "Please provide at least one input file" << endl;
@@ -320,8 +320,7 @@ int main(int argc, char * argv[])
             else cout << "WARNING: " << fname << " IS NOT A TEXT FILE. WE CANNOT CONVERT THIS." << endl;
         }
     }
-    */
-    input_files.push_back("bn.txt");
+    
     for (vector<string>::iterator it = input_files.begin(); it != input_files.end(); ++it)
     {
         wifstream in;
